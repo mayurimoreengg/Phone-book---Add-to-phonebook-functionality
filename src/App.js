@@ -17,12 +17,6 @@ export default function App() {
     setInputNum('');
   }
 
-  function editModalTrigger() {
-    setShowEditModal(true);
-  }
-
-  function editItem() {}
-
   return (
     <div>
       <h1>Hello Welcome to PhoneBook!</h1>
@@ -32,7 +26,6 @@ export default function App() {
         setInputName={setInputName}
         setInputNum={setInputNum}
         addToBook={addToBook}
-        editModalTrigger={editModalTrigger}
       />
       <PhoneBookList phoneBookList={phoneBookList} />
     </div>
